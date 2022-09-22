@@ -36,3 +36,36 @@
     transform: rotate(360deg);
   }
 }
+.container-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.topbtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  margin-right: 1rem !important;
+}
+
+.Table_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.btn_add {
+  width: 130px;
+  padding: 10px;
+  margin-right: 1em;
+  background-color: blue;
+  color: antiquewhite;
+
+}
+
+.table-head {
+  font-weight: 600;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: medium;
+}
