@@ -41,3 +41,38 @@
     color: #000 !important;
   }
 
+  .addForm_btnsDiv{
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+.save_btn_add{
+  height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    background: blue;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: monospace;
+    border: none;
+}
+.cancel_btn_add{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  background: red;
+  color: #ffffff;
+  font-weight: 600;
+  font-family: monospace;
+  border: none;
+}
+.add_form_div_pad{
+  padding: 30px 30px 30px 30px;
+}
+.Add_app_text{
+text-align: center;
+margin-top: 1rem;
+font-size: 35px;
+}
