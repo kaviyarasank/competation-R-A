@@ -1,0 +1,52 @@
+.add_form_main_div{
+  padding: 35px 15px 0px 75px;
+}
+.Add_Form_title{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 2rem;
+}
+.Add_form_btn_div{
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+  .addForm_btnsDiv{
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+.save_btn_add{
+  height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    background: blue;
+    color: #ffffff;
+    font-weight: 600;
+    border: none;
+}
+.cancel_btn_add{
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  background: red;
+  color: #ffffff;
+  font-weight: 600;
+  border: none;
+}
+.add_form_div_pad{
+  padding: 30px 30px 30px 30px;
+}
+.Add_app_text{
+text-align: center;
+margin-top: 1rem;
+font-size: 35px;
+}
+.starRating{
+  margin-left: 90px;
+}

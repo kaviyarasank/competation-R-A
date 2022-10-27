@@ -1,0 +1,10 @@
+.AddForm_label{
+    font-size: 16px;
+    font-style: normal;
+}
+.AddUser_Input{
+    height: 40px;
+    width: 60%;
+    border-radius: 5px;
+    border: 1px solid;
+}

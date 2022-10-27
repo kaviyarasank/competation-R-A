@@ -44,23 +44,23 @@
 .topbtn {
   display: flex;
   justify-content: flex-end;
-  margin-top: 1rem;
-  margin-right: 1rem !important;
+  margin-top: 3rem;
+  margin-right: 2rem !important;
 }
 
 .Table_wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 4rem;
 }
 
 .btn_add {
   width: 130px;
   padding: 10px;
   margin-right: 1em;
-  background-color: blue;
-  color: antiquewhite;
+  background-color: #1f28e7;
+  color: #eeeedb;
   border-radius: 50px;
   border: 1px solid #0000;
 
@@ -95,4 +95,23 @@ tr.table-head .MuiTableCell-root {
 .delete_icon {
   width: 18px !important;
   height: 19px !important;
+}
+.custom_pagination_student ul.MuiPagination-ul li:last-child button.MuiPaginationItem-previousNext:before {
+  content: "NEXT";
+}
+
+.custom_pagination_student button.MuiPaginationItem-previousNext svg {
+  display: none;
+}
+
+.custom_pagination_student button.Mui-selected {
+  background: #000000 !important;
+  color: #ffffff;
+  font-weight: 500;
+}
+.custom_pagination_student {
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
