@@ -20,19 +20,19 @@
     text-align: center;
   }
 .save_btn_add{
-  height: 50px;
+  height: 40px;
     width: 100px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     text-align: center;
-    background: blue;
+    background: #1976cf;
     color: #ffffff;
     font-weight: 600;
     border: none;
 }
 .cancel_btn_add{
-  height: 50px;
+  height: 40px;
   width: 100px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   text-align: center;
   background: red;
   color: #ffffff;
@@ -50,3 +50,14 @@ font-size: 35px;
 .starRating{
   margin-left: 90px;
 }
+.css-ma94iv-MuiButtonBase-root-MuiButton-root:hover{
+  background-color: #212529!important;
+}
+
+.Header_title .css-1juivf6-MuiTypography-root{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif!important;
+}
+
+
+
+

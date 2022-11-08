@@ -6,6 +6,13 @@ import Rating from '@mui/material/Rating';
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
 import { BaseUrl } from "../../services/apiService";
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+
 
 const AddForm = () => {
 
@@ -51,6 +58,25 @@ const AddForm = () => {
     setRating(e.target.value)
   }
   return (
+      <>
+           <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+          </IconButton>
+          <Typography className="Header_title" variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          Leader Appreciation Tool
+          </Typography>
+          <Button color="inherit" sx={{ backgroundColor: "black" }}>Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
     <div className="add_form_main_div">
       <p className="Add_Form_title">Create Appreciation</p>
       <div className="row mt-3">
@@ -103,11 +129,13 @@ const AddForm = () => {
       <div className="Add_form_btn_div mt-5">
         <div className="addForm_btnsDiv">
           <button className="save_btn_add" onClick={handleSave}>Submit</button>
-          <button className="cancel_btn_add ms-2" onClick={handleClick}>cancel</button>
+          <button className="cancel_btn_add ms-2" onClick={handleClick}>Cancel</button>
         </div>
       </div>
 
     </div>
+   
+    </>
   )
 }
 export default AddForm;

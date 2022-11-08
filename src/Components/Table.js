@@ -16,6 +16,12 @@ import Pagination from "@mui/material/Pagination";
 import axios from 'axios';
 import { ToastContainer, toast } from 'react-toastify';
 import { BaseUrl } from '../services/apiService';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
 
 function TableData() {
   const navigate = useNavigate();
@@ -24,7 +30,7 @@ function TableData() {
   const handleClick = () => {
     navigate("/add-form")
   }
-
+ 
   const getApi = async () => {
     await axios.get(BaseUrl.BASE_URL + "api/new/listfeedback/")
       .then((res) => {
@@ -36,6 +42,7 @@ function TableData() {
   }
   useEffect(() => {
     getApi();
+
   }, []);
   const handleChangePage = (event, value) => {
     getApi(value);
@@ -44,6 +51,24 @@ function TableData() {
   return (
 
     <>
+     <Box sx={{ flexGrow: 1 }}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            size="large"
+            edge="start"
+            color="inherit"
+            aria-label="menu"
+            sx={{ mr: 2 }}
+          >
+          </IconButton>
+          <Typography  className="Header_title" variant="h6" component="div" sx={{ flexGrow: 1 }}>
+          Leader Appreciation Tool
+          </Typography>
+          <Button color="inherit" sx={{ backgroundColor: "black" }}>Login</Button>
+        </Toolbar>
+      </AppBar>
+    </Box>
       <div className='container-fluid container-wrapper '>
         <div className='topbtn mt-5'>
           <button className='btn_add' onClick={handleClick} >Add</button>
@@ -53,10 +78,11 @@ function TableData() {
             <Table sx={{ minWidth: 850 }} aria-label="customized table">
               <TableHead>
                 <TableRow className='table-head'>
-                  <TableCell>S.no</TableCell>
+                  <TableCell>S.No</TableCell>
                   <TableCell>Lead Name</TableCell>
                   <TableCell>Employee Name</TableCell>
-                  <TableCell>Appriciation</TableCell>
+                  <TableCell>Description</TableCell>
+                  <TableCell>Appreciation</TableCell>
                   <TableCell>Action</TableCell>
                 </TableRow>
               </TableHead>
@@ -65,14 +91,16 @@ function TableData() {
                   <TableRow
                     key={row.name}
                   >
-                    {console.log("response", row)}
+                 
                     <TableCell component="th" scope="row">
                       {i + 1}
                     </TableCell>
                     <TableCell >{row.feedback_by}</TableCell>
                     <TableCell >{row.name_of_employee}</TableCell>
+                    <TableCell >{row.feedback_description}</TableCell>
+              
                     <TableCell >
-                      <Rating name="size-large" value={row.star_rating} size="large" disabled />
+                      <Rating name="size-large" value={row.star_rating} size="large" readOnly />
                     </TableCell>
                     <TableCell >
                       <div className="actions_container">
@@ -109,6 +137,7 @@ function TableData() {
         onChange={handleChangePage}
         className="custom_pagination_student"
       />
+  
     </>
   );
 }
