@@ -56,14 +56,14 @@
 }
 
 .btn_add {
-  width: 80px;
+  width: 90px;
   padding: 5px;
   margin-right: 1em;
   background-color: #1976cf;
   color: #eeeedb;
-  /* border-radius: 50px; */
   border: 1px solid #0000;
-
+  font-weight: 600;
+  border-radius: 5px;
 }
 .css-ma94iv-MuiButtonBase-root-MuiButton-root:hover{
   background-color: #212529!important;
@@ -125,6 +125,3 @@ tr.table-head .MuiTableCell-root {
 
   margin-top: 1px!important;
 }
-
-
-

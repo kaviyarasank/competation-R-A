@@ -22,7 +22,7 @@
 .save_btn_add{
   height: 40px;
     width: 100px;
-    /* border-radius: 10px; */
+    border-radius: 5px;
     text-align: center;
     background: #1976cf;
     color: #ffffff;
@@ -32,7 +32,7 @@
 .cancel_btn_add{
   height: 40px;
   width: 100px;
-  /* border-radius: 10px; */
+  border-radius: 5px;
   text-align: center;
   background: red;
   color: #ffffff;
